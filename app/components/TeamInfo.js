@@ -76,6 +76,7 @@ export default class TeamInfo extends Component {
         }
         this.groupRef = this.getRef().child("friends");
         this.alertsRef = this.getRef().child("alerts");
+        alert(this.props.navigation.state.params.uid);
     }
 
     getRef(){
@@ -96,7 +97,7 @@ export default class TeamInfo extends Component {
                     picture :child.val().picture,
                   });
           });
-          alert(JSON.stringify(items));
+          // alert(JSON.stringify(items));
           this.setState({
             loading : false,
             alerts : items
@@ -233,7 +234,7 @@ export default class TeamInfo extends Component {
 
     componentDidMount(){
         Geolocation.getCurrentPosition(position => {
-      alert(JSON.stringify(position));
+      // alert(JSON.stringify(position));
 
       this.setState({latitude : position.coords.latitude, longitude : position.coords.longitude,loading : false});
   });
@@ -272,7 +273,7 @@ export default class TeamInfo extends Component {
                                 title="ADD MEMBER"
                                 color="#2b2b39"
                                 onPress = {()=> {
-                                    alert(JSON.stringify(this.state.members));
+                                    this.props.navigation.navigate("addMember",{"g_id":this.props.navigation.state.params.uid});
                                 }}
                             />
                     </View>

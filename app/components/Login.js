@@ -91,7 +91,7 @@ export default class Login extends Component {
         <StatusBar barStyle="light-content" backgroundColor="#191922" />
         <View behavior="padding" style={styles.container}>
           <View style={styles.logoContainer}>
-            <Image style={styles.logo} source={require("../../images/cart.png")} />
+            <Image style={styles.logo} source={require("./bell.png")} />
             {/* <Text style={styles.subtext}>Humdum</Text> */}
           </View>
           <KeyboardAvoidingView style={styles.keyboard}>
@@ -166,7 +166,7 @@ const styles = StyleSheet.create({
   },
   logo: {
     width: 200,
-    height: 150
+    height: 200
   },
   subtext: {
     color: "#ffffff",

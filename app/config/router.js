@@ -23,6 +23,7 @@ import Maps from '../components/maps';
 import TeamComponent from "../components/teamComponent";
 import TeamInfo from "../components/TeamInfo";
 import MyProduct from "../components/MyProduct";
+import AddMember from "../components/AddMember";
 const Tabs = createBottomTabNavigator({
   Home: { 
     screen: Home ,
@@ -127,7 +128,8 @@ const MainScreenNavigator = createStackNavigator({
   SendIncident : {
     screen : SendIncident
   },
-  maps : {screen : Maps}
+  maps : {screen : Maps},
+  addMember : { screen : AddMember}
 });
 
 export default createAppContainer(MainScreenNavigator);
