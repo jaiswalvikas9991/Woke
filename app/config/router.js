@@ -14,7 +14,7 @@ import Home from "../screens/Home/Home";
 import Profile from "../screens/Profile/Profile";
 import Book from "../screens/BookDetails/BookDetail";
 import FriendsList from "../components/Friendlist";
-import Chat from "../components/Chat";
+import Chat from "../components/GroupMessage";
 import SendIncident from "../components/sendIncident";
 import Maps from '../components/maps';
 import TeamComponent from "../components/teamComponent";
