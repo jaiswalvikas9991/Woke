@@ -32,7 +32,7 @@ class GloChat extends React.Component {
         <GiftedChat
           messages={this.state.messages}
           onSend={message => {
-            alert(JSON.stringify(message));
+            // alert(JSON.stringify(message));
             Backend.sendMessage(message);
           }}
           user={{

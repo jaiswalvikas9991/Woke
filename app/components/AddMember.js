@@ -52,7 +52,7 @@ export default class AddMember extends Component {
     };
 
     this.friendsRef = this.getRef().child("friends");
-    alert(this.props.navigation.state.params.g_id);
+    // alert(this.props.navigation.state.params.g_id);
     
   }
 
@@ -237,7 +237,7 @@ var user = firebase.auth().currentUser;
   }
 
   renderRow = rowData => {
-    alert(rowData);
+    // alert(rowData);
     return (
       <TouchableOpacity
         onPress={() => {

@@ -135,7 +135,7 @@ export default class SendIncident extends Component {
             camps : items
           })
 
-          alert(this.state.camps);
+          // alert(this.state.camps);
       });
           
     }
@@ -173,7 +173,7 @@ export default class SendIncident extends Component {
             });
 
             Geolocation.getCurrentPosition(position => {
-      alert(JSON.stringify(position));
+      // alert(JSON.stringify(position));
 
       this.setState({latitude : position.coords.latitude,
                     longitude : position.coords.longitude});
@@ -212,7 +212,7 @@ export default class SendIncident extends Component {
 
               }
                 this.props.navigation.navigate("maps" , {"object" : passObject , "latitude" : this.state.latitude, "longitude" : this.state.longitude});
-                alert("sjknsk");
+                // alert("sjknsk");
     });
             
                 

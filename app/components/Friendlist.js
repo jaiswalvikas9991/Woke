@@ -182,37 +182,6 @@ export default class FriendsList extends Component {
     
   }
 
-  renderRow = rowData => {
-    alert(rowData);
-    return (
-      <TouchableOpacity
-        onPress={() => {
-          // name = rowData.name;
-          // email = rowData.email;
-          // uid = rowData.uid;
-          name = "saurabh"
-          email = "saurabh@gmail.com"
-          uid = "Yp4EpnNRIsOrCmyxvlzydyvnwuO2"
-          // this.props.navigation.setParam({'name':name});
-          this.props.navigation.setParams({
-            name: name,
-            email: email,
-            uid: uid
-          });
-        }}
-      >
-        <View style={styles.profileContainer}>
-          <Image
-            source={{
-              uri: "https://www.gravatar.com/avatar/"
-            }}
-            style={styles.profileImage}
-          />
-          <Text style={styles.profileName}>{rowData.name}</Text>
-        </View>
-      </TouchableOpacity>
-    );
-  };
   FlatListItemSeparator = () => {
       return (
           <View style={{height : 1.2,width:"100%",backgroundColor:"#e5e5e5"}}>
@@ -238,7 +207,6 @@ export default class FriendsList extends Component {
         /> */}
         <FlatList
         showsVerticalScrollIndicator = {false}
-        renderRow = {this.renderRow}
         data = {this.state.dataSource}
         ItemSeparatorComponent = {this.FlatListItemSeparator}
         renderItem = {({item,index}) => {

@@ -51,7 +51,7 @@ export default class ForgetPassword extends Component {
       .sendPasswordResetEmail(email)
       .then(() => {
         this.setState({ loading: false });
-        alert("The email has been sent to reset password.");
+        // alert("The email has been sent to reset password.");
         this.props.navigation.navigate("Login");
       })
       .catch(error => {

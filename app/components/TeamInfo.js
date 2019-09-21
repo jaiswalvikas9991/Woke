@@ -76,7 +76,7 @@ export default class TeamInfo extends Component {
         }
         this.groupRef = this.getRef().child("friends");
         this.alertsRef = this.getRef().child("alerts");
-        alert(this.props.navigation.state.params.uid);
+        // alert(this.props.navigation.state.params.uid);
     }
 
     getRef(){

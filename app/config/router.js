@@ -11,10 +11,7 @@ import { createBottomTabNavigator, createAppContainer, createStackNavigator } fr
 import Icon from 'react-native-vector-icons/Ionicons';
 
 import Home from "../screens/Home/Home";
-import Sellers from "../screens/Sellers/Sellers";
-import Categories from "../screens/Categories/Categories";
 import Profile from "../screens/Profile/Profile";
-import Cart from "../screens/Cart/Cart";
 import Book from "../screens/BookDetails/BookDetail";
 import FriendsList from "../components/Friendlist";
 import Chat from "../components/Chat";
@@ -32,12 +29,7 @@ const Tabs = createBottomTabNavigator({
       tabBarIcon : ({focused}) => <Icon name="ios-home" color ={focused ? "white":"gray"} size = {22}/>
     },
   },
-  // Trending: { 
-  //   screen: Home ,
-  //   navigationOptions : {
-  //     tabBarIcon : ({focused}) => <Icon name="ios-list" color ={focused ? "white":"gray"} size = {22}/>
-  //   },
-  // },
+
   Teams: { 
     screen: TeamComponent ,
     navigationOptions : {

@@ -93,7 +93,7 @@ export default class MyProduct extends Component {
             alerts : items
           });
 
-          alert(this.state.alerts);
+        //   alert(this.state.alerts);
         });
       }
 
